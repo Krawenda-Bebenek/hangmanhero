@@ -1,5 +1,6 @@
-package com.ekb.hangmanhero;
+package com.ekb.hangmanhero.login.controller;
 
+import com.ekb.hangmanhero.login.tokenservice.SystemUserTokenService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
@@ -28,3 +29,4 @@ public class AuthorizationController {
 
         return systemUserTokenService.grantActualToken(loginRequest);
     }
+}
